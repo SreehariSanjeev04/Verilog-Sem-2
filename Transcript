@@ -1,0 +1,594 @@
+# Reading pref.tcl
+# do main_circuit_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/dell/Desktop/Final\ Verilog {C:/Users/dell/Desktop/Final Verilog/main_circuit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:48 on Apr 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/dell/Desktop/Final Verilog" C:/Users/dell/Desktop/Final Verilog/main_circuit.v 
+# -- Compiling module unauthorized
+# -- Compiling module twoTofourDecorder
+# -- Compiling module transaction_card
+# -- Compiling module transaction_cash
+# -- Compiling module threeTofourDecoder
+# -- Compiling module rc_adder
+# -- Compiling module passwordChecker
+# -- Compiling module amount
+# -- Compiling module inverter
+# -- Compiling module half_adder
+# -- Compiling module fadder
+# -- Compiling module fourBitAdder
+# -- Compiling module fireManagement
+# -- Compiling module electric_charge
+# -- Compiling module display
+# -- Compiling module fourBitcomparator
+# -- Compiling module cng
+# -- Compiling module binTonum
+# -- Compiling module and_gate
+# -- Compiling module eightBitAdderSub
+# -- Compiling module fourBitSubtractor
+# -- Compiling module fourBitMultiplier
+# -- Compiling module main_circuit
+# 
+# Top level modules:
+# 	fourBitAdder
+# 	main_circuit
+# End time: 13:13:48 on Apr 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/dell/Desktop/Final\ Verilog {C:/Users/dell/Desktop/Final Verilog/main_circuit_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:49 on Apr 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/dell/Desktop/Final Verilog" C:/Users/dell/Desktop/Final Verilog/main_circuit_tb.v 
+# -- Compiling module main_circuit_tb
+# 
+# Top level modules:
+# 	main_circuit_tb
+# End time: 13:13:49 on Apr 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  main_circuit_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" main_circuit_tb 
+# Start time: 13:13:49 on Apr 27,2024
+# Loading work.main_circuit_tb
+# Loading work.main_circuit
+# Loading work.fireManagement
+# Loading work.fourBitcomparator
+# Loading work.passwordChecker
+# Loading work.threeTofourDecoder
+# Loading work.twoTofourDecorder
+# Loading work.binTonum
+# Loading work.fadder
+# Loading work.half_adder
+# Loading work.fourBitSubtractor
+# Loading work.amount
+# Loading work.fourBitMultiplier
+# Loading work.and_gate
+# Loading work.rc_adder
+# Loading work.display
+# Loading work.unauthorized
+# Loading work.inverter
+# Loading work.transaction_cash
+# Loading work.electric_charge
+# Loading work.cng
+# Loading work.eightBitAdderSub
+# Loading work.transaction_card
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'sum'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(389).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/s1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 88
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'sum'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(389).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/s3 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 89
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'sum'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(389).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/s2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 90
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 't3'.  Expected 18, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 482
+# ** Warning: (vsim-3722) C:/Users/dell/Desktop/Final Verilog/main_circuit.v(482): [TFMPC] - Missing connection for port 'final_enable'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'sum'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(389).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/s1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 68
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'sum'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(389).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/s3 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# CODE: 010
+# PASSWORD MATCH:0
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 00000000
+# 
+# CODE: 000
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 00000100
+# 
+# CODE: 001
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 00001010
+# 
+# CODE: 010
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 11001100
+# 
+# CODE: 011
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 11101100
+# 
+# CODE: 100
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 1
+# isPaidCard: 0
+# Output: 01101100
+# 
+# CODE: 101
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 1
+# Output: 00000000
+# 
+# CODE: 110
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 00000101
+# 
+# CODE: 111
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 00000101
+# 
+quit -sim
+# End time: 13:14:33 on Apr 27,2024, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 83
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" work.main_circuit_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" work.main_circuit_tb 
+# Start time: 13:14:46 on Apr 27,2024
+# Loading work.main_circuit_tb
+# Loading work.main_circuit
+# Loading work.fireManagement
+# Loading work.fourBitcomparator
+# Loading work.passwordChecker
+# Loading work.threeTofourDecoder
+# Loading work.twoTofourDecorder
+# Loading work.binTonum
+# Loading work.fadder
+# Loading work.half_adder
+# Loading work.fourBitSubtractor
+# Loading work.amount
+# Loading work.fourBitMultiplier
+# Loading work.and_gate
+# Loading work.rc_adder
+# Loading work.display
+# Loading work.unauthorized
+# Loading work.inverter
+# Loading work.transaction_cash
+# Loading work.electric_charge
+# Loading work.cng
+# Loading work.eightBitAdderSub
+# Loading work.transaction_card
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/a1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/e1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/c1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/a1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'sum'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(389).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/s1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 88
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'sum'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(389).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/s3 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 89
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'sum'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(389).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t2/s2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 90
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 't3'.  Expected 18, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 482
+# ** Warning: (vsim-3722) C:/Users/dell/Desktop/Final Verilog/main_circuit.v(482): [TFMPC] - Missing connection for port 'final_enable'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/a1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/e1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/c1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'sum'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(389).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/s1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 68
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'sum'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(389).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/s3 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 69
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/t3/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/e1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f1/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f1/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f1/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'b3'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f2/fa0 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 437
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f2/fa1 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 438
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/dell/Desktop/Final Verilog/main_circuit.v(121).
+#    Time: 0 ps  Iteration: 0  Instance: /main_circuit_tb/m1/c1/f2/fa2 File: C:/Users/dell/Desktop/Final Verilog/main_circuit.v Line: 439
+add wave  \
+sim:/main_circuit_tb/user_password \
+sim:/main_circuit_tb/additional \
+sim:/main_circuit_tb/code \
+sim:/main_circuit_tb/hours \
+sim:/main_circuit_tb/temp \
+sim:/main_circuit_tb/firePosition \
+sim:/main_circuit_tb/duration \
+sim:/main_circuit_tb/power \
+sim:/main_circuit_tb/cash \
+sim:/main_circuit_tb/capacity \
+sim:/main_circuit_tb/card_number \
+sim:/main_circuit_tb/reverse \
+sim:/main_circuit_tb/password_matched \
+sim:/main_circuit_tb/isPaidCash \
+sim:/main_circuit_tb/isPaidCard \
+sim:/main_circuit_tb/result \
+sim:/main_circuit_tb/alarm_status
+run
+# CODE: 010
+# PASSWORD MATCH:0
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 00000000
+# 
+# CODE: 000
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 00000100
+# 
+# CODE: 001
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 00001010
+# 
+# CODE: 010
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 11001100
+# 
+# CODE: 011
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 11101100
+# 
+# CODE: 100
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 1
+# isPaidCard: 0
+# Output: 01101100
+# 
+# CODE: 101
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 1
+# Output: 00000000
+# 
+# CODE: 110
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 00000101
+# 
+# CODE: 111
+# PASSWORD MATCH:1
+# ALARM STATUS: 00000000
+# isPaidCash: 0
+# isPaidCard: 0
+# Output: 00000101
+# 
